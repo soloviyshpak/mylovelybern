@@ -1,0 +1,168 @@
+body {
+	background: #EFD7AF;
+	font-family: Helvetica;
+	line-height: 1.3;
+}
+
+.rightpic {
+    float: right;
+    margin: 1px 0 5px 5px;
+}
+
+.content {
+	width: 98%;
+	min-height: 375px;
+	margin: 0 auto;
+}
+
+.content h1 {
+    text-align: center;
+}
+
+#gl-content {
+    width: 98%;
+    min-height: 375px;
+    margin: 0 auto;
+}
+
+#gl-content h1 {
+    text-align: center;
+}
+
+.news-content {
+    text-align: center;
+}
+
+#first-news {
+    margin-top: 30px;
+}
+
+#first-news h2 {
+    font-size: 20px;
+}
+
+#first-news p {
+    font-style: italic;
+}
+
+#pirog-scenki {
+    width: 35%;
+}
+
+.ps {
+    width: 250px;
+    min-height: 17px;
+}
+
+
+.container footer {
+	background: #433920;
+	min-height: 30px;
+}
+
+.content-syki {
+    text-align: center;
+}
+
+.social {
+	width: 50%;
+	min-height: 30px;
+	margin: 0 0 0 53px;
+	padding: 5px;
+}
+
+.social div {
+	color: #fff;
+    font-size: 33px;
+}
+
+.social img {
+	width: 75px;
+	height: 75px;
+}
+
+.kont {
+    width: 800px;
+    min-height: 400px;
+    margin: 0 auto;
+}
+
+.end {
+    width: 800px;
+    min-height: 148px;
+    margin: 70px 0;
+    text-align: center;
+}
+
+.form-forma {
+    width: 380px;
+    min-height: 50px;
+    float: right;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.form-forma span {
+    margin: 0 185px 0 0;
+}
+
+.span-konta {
+    padding: 52px 15px 52px 52px;
+}
+
+
+.span-kontb {
+    padding: 70px 20px 70px 70px;
+}
+
+.form-forma input {
+    width: 233px;
+    height: 20px;
+    margin: 0 0 0 0;
+}
+
+.kont img {
+    margin-top: 25px;
+}
+
+table { width: 100%; margin-bottom: 20px; margin-bottom: 1.25rem; border-left: 1px solid #ebebeb; border-top: 1px solid #ebebeb; }
+td, th { padding: 5px 10px; border-right: 1px solid #ebebeb; border-bottom: 1px solid #ebebeb; }
+th { font-weight: 600; }
+.mh-footer-widget table, .mh-footer-widget td, .mh-footer-widget th { border-color: rgba(255, 255, 255, 0.3); }
+
+/* Gallery */
+.gallery img{
+ margin:5px; /* внешние отступы картинок */
+ border:3px solid #fff; /* рамка картинок */
+}
+a.photo:hover img{
+ border:3px solid #034F80; /* изменение цвета рамки при наведении на картинку */
+}
+
+footer {
+    margin: 120px 0 0 0;
+    height: 150px;
+}
+
+@media (max-width: 1920px){
+    #gltext {
+        width: 1070px;
+    }
+}
+
+@media (max-width: 1600px){
+    #gltext {
+        width: 891px;
+    }
+}
+
+@media (max-width: 1366px){
+    #gltext {
+        width: 750px;
+    }
+}
+
+#syki-text {
+    line-height: 0.6;
+}

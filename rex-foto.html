@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>rex-подробнее - MyLovelyBern</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<script type="text/javascript" src="scripts/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="fancybox-master/dist/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="fancybox-master/dist/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="fancybox-master/src/js/wheel.js"></script>
+	<link rel="stylesheet" href="fancybox-master/dist/jquery.fancybox.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<a href="index.html"><img src="img/head.jpg" alt="" width="100%"></a>
+		</header>
+		<nav>
+				<a id="touch-menu" class="mobile-menu" href="#"><i class="fa fa-bars"></i>Меню</a>
+				<ul class="menu">
+				<li><a href="index.html"></i>Главная</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="">О породе <i class="fa fa-caret-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="standart_porodi.html">Стандарт породы</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Наши собаки <i class="fa fa-caret-down"></i></a>
+					<ul class="sub-menu">
+                        <li><a href="kobeli.html">Кобели</a></li>
+						<li><a href="syki.html">Суки</a></li>
+                    </ul>
+				</li>
+                <li><a href="shenki.html">Щенки</a></li>
+				<li><a href="kontakty.html">Контакты</a></li>
+            </ul>
+			<script>
+				$(document).ready(function(){ 
+	var touch 	= $('#touch-menu');
+	var menu 	= $('.menu');
+ 
+	$(touch).on('click', function(e) {
+		e.preventDefault();
+		menu.slideToggle();
+	});
+	
+	$(window).resize(function(){
+		var w = $(window).width();
+		if(w > 767 && menu.is(':hidden')) {
+			menu.removeAttr('style');
+		}
+	});
+	
+});
+			</script>
+			</nav>
+		<section class="content">
+			<h1>Подробнее</h1>
+			<a class="gallery" href="img/reksio_telezritel.jpg"><img src="img/reksio_telezritel.jpg" id="esmi" width="566" height="377" alt=""/></a>
+ 				<script type="text/javascript">
+	jQuery(document).ready(function() {
+		jQuery("a.gallery").fancybox();
+	});
+</script>
+			
+		</section>
+		<footer>
+				<div class="social">
+					<div>Мы в соцсетях:</div>
+					<a href="https://vk.com/club195906904" target="_blank"><img src="img/vk.png" alt="VK"></a>
+					<a href="https://www.facebook.com/profile.php?id=100004996148526" target="_blank"><img src="img/fb.png" alt="FB"></a>
+					<a href="https://www.instagram.com/kennel_my_lovely_bern/" target="_blank"><img src="img/inst.png" alt="inst"></a>
+				</div>
+		</footer>
+	</div>
+</body>
+</html>

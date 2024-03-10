@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Контакты - MyLovelyBern</title>
+	<script src="scripts/jquery-1.11.2.min.js"></script>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/kont.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<a href="index.html"><img src="img/head.jpg" alt="" width="100%"></a>
+		</header>
+			<nav>
+				<a id="touch-menu" class="mobile-menu" href="#"><i class="fa fa-bars"></i>Меню</a>
+				<ul class="menu">
+				<li><a href="index.html"></i>Главная</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="">О породе <i class="fa fa-caret-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="standart_porodi.html">Стандарт породы</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Наши собаки <i class="fa fa-caret-down"></i></a>
+					<ul class="sub-menu">
+                        <li><a href="kobeli.html">Кобели</a></li>
+						<li><a href="syki.html">Суки</a></li>
+                    </ul>
+				</li>
+                <li><a href="shenki.html">Щенки</a></li>
+				<li><a href="kontakty.html">Контакты</a></li>
+            </ul>
+			<script>
+				$(document).ready(function(){ 
+	var touch 	= $('#touch-menu');
+	var menu 	= $('.menu');
+ 
+	$(touch).on('click', function(e) {
+		e.preventDefault();
+		menu.slideToggle();
+	});
+	
+	$(window).resize(function(){
+		var w = $(window).width();
+		if(w > 767 && menu.is(':hidden')) {
+			menu.removeAttr('style');
+		}
+	});
+	
+});
+			</script>
+			</nav>
+		<section class="content">
+			<h1>Контакты</h1>
+			<div class="kont">
+				<img src="img/kontakty.jpg" id="kont-img" alt="">
+				<div class="form-forma">
+				<form action="mail.php" method="POST">
+					<h2 align="top">Пишите нам</h2>
+					<label>
+						<span class="span-konta">Ваш E-Mail:</span>
+						<input type="email" name="user_name" required="required">
+					</label>
+					<label>
+						<span>Тема:</span>
+						<input type="text" name="user_theme">
+					</label>
+					<label>
+						<span class="span-kontb">Сообщение:</span>
+						<textarea type="text" name="user_text" id="" cols="30" rows="10"></textarea>
+					</label>
+					<button type="submit" name="submit">Отправить сообщение</button>
+				</form>
+				</div>
+				<div class="end">
+				<h3>Наш питомник находится в Коломенском районе Московской области</h3>
+				<p><strong>Наши контакты: +7-916-942-19-60 (Viber, WhatsApp) Юлия</strong></p>
+				<p><strong>e-mail: yukulikova2012@yandex.ru</strong></p>
+				<img src="img/kont-map.JPG" alt="" width="800px">
+				</div>
+			</div>
+		</section>
+		<footer>
+				<div class="social">
+					<div>Мы в соцсетях:</div>
+					<a href="https://vk.com/club195906904" target="_blank"><img src="img/vk.png" alt="VK"></a>
+					<a href="https://www.facebook.com/profile.php?id=100004996148526" target="_blank"><img src="img/fb.png" alt="FB"></a>
+					<a href="https://www.instagram.com/kennel_my_lovely_bern/" target="_blank"><img src="img/inst.png" alt="inst"></a>
+				</div>
+		</footer>
+	</div>
+</body>
+</html>
